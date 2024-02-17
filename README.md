@@ -1,1 +1,1 @@
-A curation of python problems and Solutions
+A curated list of python problems and Solutions
