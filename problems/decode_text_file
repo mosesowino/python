@@ -1,1 +1,15 @@
-
+def decode(file_location, reference_dictionary):
+     last_characters = []
+     dict = reference_dictionary
+     with open(file_location,'r') as file:
+     for line in file:
+     el = (line.strip().split())
+     last = el[-1]
+     last_characters.append(last)
+     
+     word = ""
+     for i in range(len(last_characters)):
+     word += dict[int(last_characters[i])]
+     if(last_characters[i] != last_characters[-1]):
+     word += " "
+     return word
